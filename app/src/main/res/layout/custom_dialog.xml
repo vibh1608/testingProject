@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:maxLength="12"
+        android:layout_marginRight="20dp"
+        android:hint="Title"
+        android:id="@+id/title_et"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:maxLength="20"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:hint="Description"
+        android:id="@+id/description_et"
+        android:textSize="25dp"
+        android:gravity="center" />
+
+    <DatePicker
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:id="@+id/datePicker" />
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginRight="2.5dp"
+            android:text="SAVE"
+            android:textSize="20dp"
+            android:id="@+id/save_btn"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:layout_marginLeft="2.5dp"
+            android:text="CANCEL"
+            android:textSize="20dp"
+            android:id="@+id/cancel_btn"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

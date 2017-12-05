@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context="com.example.user.to_do_project_1.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="64dp"
+        android:layout_width="match_parent"
+        android:background="#A4D4FF"
+        app:title="TO-DO"
+        app:titleTextColor="#000000">
+
+        <ImageView
+            android:id="@+id/completed_task"
+            android:src="@drawable/completed"
+            android:layout_gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/add_task"
+            android:src="@drawable/add_item"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_below="@+id/Toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</RelativeLayout>
